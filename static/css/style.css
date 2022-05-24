@@ -1,0 +1,17 @@
+html,
+body,
+
+
+.jumbotron {
+  background-image: url("../images/catip.jpg");
+  background-size: 100%;
+  text-align: center;
+}
+
+button {
+  padding: 4px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-left: 40px;
+}
