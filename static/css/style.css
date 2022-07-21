@@ -1,6 +1,4 @@
 html,
-body,
-
 
 .jumbotron {
   background-image: url("../images/catip.jpg");
@@ -8,11 +6,17 @@ body,
   text-align: center;
 }
 
-button {
-  padding: 4px;
-  border: none;
-  border-radius: 7px;
-  cursor: pointer;
-  margin-left: 0px;
-  margin-right: 40px;
+
+body,
+
+
+li {
+  text-align: left;
+  text-justify: auto;
+  font-size: xx-large;
+}
+
+.showlocation {
+  font-size: xx-large;
+  text-align: center;
 }
