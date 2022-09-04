@@ -258,6 +258,15 @@ svg {
 |
 --------------------------------------------------------------*/
 
+.ui-component-navbutton {
+  border: .0625rem  var(--ui-color-brand);
+  border-radius: var(--ui-radius-button);
+  display: block;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+}
+
 .ui-component-button {
   border: .0625rem solid var(--ui-color-brand);
   border-radius: var(--ui-radius-button);
@@ -445,7 +454,23 @@ div label[for=ui-component-toggle__yearly] {
   visibility: visible;
 }
 
+
+
+
+
 .ui-section-header--nav-link {
+  font-size: var(--ui-typography-h3);
+  padding: .5rem;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.ui-section-header--nav a:hover {
+  background: #ddd;
+
+}
+
+.ui-section-header--current {
   font-size: var(--ui-typography-h3);
   padding: .5rem;
   text-decoration: none;
@@ -723,8 +748,10 @@ div label[for=ui-component-toggle__yearly] {
   .ui-layout-column-center {
     margin-left: auto;
     margin-right: auto;
+    width:35%;
+    height: auto;
   }
-
+  
   .ui-layout-grid-2,
   .ui-layout-grid-3 {
     column-gap: var(--ui-layout-gutter);
@@ -1059,7 +1086,7 @@ div label[for=ui-component-toggle__yearly] {
   ------------------------------------------------------------*/
 
   .ui-section-testimonial {
-    padding-bottom: 7.5rem;
+    padding-bottom: 5.5rem;
     padding-top: 7.5rem;
   }
 
