@@ -237,6 +237,13 @@ svg {
 
 .ui-layout-grid { display: grid; }
 
+.ui-layout-center {
+  text-align: center;
+  padding: auto;
+  align-items: center;
+  justify-content: center;  
+}
+
 /*--------------------------------------------------------------
 6.0 COMPONENT
 --------------------------------------------------------------*/
@@ -483,7 +490,7 @@ div label[for=ui-component-toggle__yearly] {
 --------------------------------------------------------------*/
 
 .ui-section-hero {
-  padding-bottom: 5rem;
+  padding-bottom: 1rem;
   padding-top: 5rem;
   text-align: center;
 }
@@ -769,6 +776,7 @@ div label[for=ui-component-toggle__yearly] {
            (var(--ui-layout-gutter) * 3));
   }
 
+
   /*------------------------------------------------------------
   COMPONENT
   ------------------------------------------------------------*/
@@ -937,6 +945,8 @@ div label[for=ui-component-toggle__yearly] {
 
   .ui-layout-grid-3 div:nth-of-type(3) { position: static; }
 
+  .ui-layout-row-2 { grid-template-rows: repeat(2, 1fr); }
+
   /*------------------------------------------------------------
   SECTION
   ------------------------------------------------------------*/
@@ -1043,7 +1053,7 @@ div label[for=ui-component-toggle__yearly] {
   |
   ------------------------------------------------------------*/
 
-  .ui-section-header { padding-top: 3rem; }
+  .ui-section-header { padding-top: 1.5rem; }
 
   /*------------------------------------------------------------
   |
@@ -1052,8 +1062,8 @@ div label[for=ui-component-toggle__yearly] {
   ------------------------------------------------------------*/
 
   .ui-section-hero {
-    padding-bottom: 7.5rem;
-    padding-top: 7.5rem;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
   }
 
   /*------------------------------------------------------------
@@ -1075,8 +1085,8 @@ div label[for=ui-component-toggle__yearly] {
   ------------------------------------------------------------*/
 
   .ui-section-feature {
-    padding-bottom: 7.5rem;
-    padding-top: 7.5rem;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
   }
 
   /*------------------------------------------------------------
@@ -1086,8 +1096,8 @@ div label[for=ui-component-toggle__yearly] {
   ------------------------------------------------------------*/
 
   .ui-section-testimonial {
-    padding-bottom: 5.5rem;
-    padding-top: 7.5rem;
+    padding-bottom: 3rem;
+    padding-top: 4rem;
   }
 
   /*------------------------------------------------------------
