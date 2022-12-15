@@ -13,4 +13,10 @@ function copyClipboard() {
   
     // Alert the copied text
     alert("Copied the text: " + "reesewc@comcast.net");
-  }
+}
+
+
+function showInput() {
+    document.getElementById('display').innerHTML = 
+                document.getElementById("user_input").value;
+}
