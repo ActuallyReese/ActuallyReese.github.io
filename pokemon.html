@@ -30,6 +30,7 @@
     <link href="static/images/favicons.ico" rel="icon" type="image/x-icon" />
     <!-- JavaScript -->
     <script src="static/js/main.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
   </head>
   <body>
     <header role="banner" class="ui-section-header">
@@ -53,12 +54,13 @@
           
         </div>
       </div>
+      <div>
     </header>
     <main role="main">
     <section>
       <h1>The input required attribute</h1>
       <div class="ui-section-hero__layout ui-layout-grid ui-layout-grid">
-        <form action="https://actuallyreese.github.io/pokemon_teams.html">
+        <form id="team">
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" required>
           <br>
@@ -385,11 +387,95 @@
             <option> Steel </option>
             <option> Water </option> 
           </select>  
+          <div class="p10">
+          </div>
           <br>
-          <button type="submit">Submit</button>
+          <!-- button type="submit">Submit</button 
+          !-->
         </form> 
+
+        <!--     Script adapted from https://www.encodedna.com/javascript/how-to-save-form-data-in-a-text-file-using-javascript.htm      -->
+        <script>
+          let saveFile = () => {
+            
+            // Get the data from each element on the form.
+          const name = document.getElementById('name');
+            const p1 = document.getElementById('p1');
+            const p1t = document.getElementById('p1t');
+            const p2 = document.getElementById('p2');
+            const p2t = document.getElementById('p2t');
+            const p3 = document.getElementById('p3');
+            const p3t = document.getElementById('p3t');
+            const p4 = document.getElementById('p4');
+            const p4t = document.getElementById('p4t');
+            const p5 = document.getElementById('p5');
+            const p5t = document.getElementById('p5t');
+            const p6 = document.getElementById('p6');
+            const p6t = document.getElementById('p6t');
+            const p7 = document.getElementById('p7');
+            const p7t = document.getElementById('p7t');
+            const p8 = document.getElementById('p8');
+            const p8t = document.getElementById('p8t');
+            const p9 = document.getElementById('p9');
+            const p9t = document.getElementById('p9t');
+            const p10 = document.getElementById('p10');
+            const p10t = document.getElementById('p10t');
+            const p11 = document.getElementById('p11');
+            const p11t = document.getElementById('p11t');
+            const p12 = document.getElementById('p12');
+            const p12t = document.getElementById('p12t');
+            
+            // This variable stores all the data.
+            let data = 
+                '\r Name: ' + name.value + ' \r\n\n ' + 
+                'Pokemon 1: ' +p1.value + ' \r\n ' + 
+                'P1 Terratype: ' + p1t.value + ' \r\n\n ' + 
+                'Pokemon 2: ' +p2.value + ' \r\n ' + 
+                'P2 Terratype: ' + p2t.value + ' \r\n\n ' +
+                'Pokemon 3: ' +p3.value + ' \r\n ' + 
+                'P3 Terratype: ' + p3t.value + ' \r\n\n ' +
+                'Pokemon 4: ' +p4.value + ' \r\n ' + 
+                'P4 Terratype: ' + p4t.value + ' \r\n\n ' +
+                'Pokemon 5: ' +p5.value + ' \r\n ' + 
+                'P5 Terratype: ' + p5t.value + ' \r\n\n ' +
+                'Pokemon 6: ' +p6.value + ' \r\n ' + 
+                'P1 Terratype: ' + p6t.value + ' \r\n\n ' +
+                'Pokemon 7: ' +p7.value + ' \r\n ' + 
+                'P1 Terratype: ' + p7t.value + ' \r\n\n ' +
+                'Pokemon 8: ' +p8.value + ' \r\n ' + 
+                'P1 Terratype: ' + p8t.value + ' \r\n\n ' +
+                'Pokemon 9: ' +p9.value + ' \r\n ' + 
+                'P1 Terratype: ' + p9t.value + ' \r\n\n ' +
+                'Pokemon 10: ' +p10.value + ' \r\n ' + 
+                'P1 Terratype: ' + p10t.value + ' \r\n\n ' +
+                'Pokemon 11: ' +p11.value + ' \r\n ' + 
+                'P1 Terratype: ' + p11t.value + ' \r\n\n ' +
+                'Pokemon 12: ' +p12.value + ' \r\n ' + 
+                'P1 Terratype: ' + p12t.value + ' \r\n\n ';
+            
+            // Convert the text to BLOB.
+            const textToBLOB = new Blob([data], { type: 'text/plain' });
+            const sFileName = 'teamData.txt';	   // The file to save the data.
+    
+            let newLink = document.createElement("a");
+            newLink.download = sFileName;
+    
+            if (window.webkitURL != null) {
+                newLink.href = window.webkitURL.createObjectURL(textToBLOB);
+            }
+            else {
+                newLink.href = window.URL.createObjectURL(textToBLOB);
+                newLink.style.display = "none";
+                document.body.appendChild(newLink);
+            }
+    
+            newLink.click(); 
+}
+        </script>
+        <div>
+          <input type="button" id="bt" value="Save data to file" onclick="saveFile()" />
+        </div>
       </div>
     </section>
-
   </body>
 </html>
