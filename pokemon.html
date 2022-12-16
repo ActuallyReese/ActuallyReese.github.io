@@ -27,12 +27,12 @@
     <!-- TITLE -->
     <title>Reese Coulter's Portfolio</title>
     <!-- Favicon -->
-    <link href="static/images/favicons.ico" rel="icon" type="image/x-icon" />
+    <link href="static/images/pball.ico" rel="icon" type="image/x-icon" />
     <!-- JavaScript -->
     <script src="static/js/main.js"></script>
     <script src="https://d3js.org/d3.v7.min.js"></script>
   </head>
-  <body>
+  <body class="bodyc">
     <header role="banner" class="ui-section-header">
       <div class="ui-layout-container">
         <div class="ui-section-header__layout ui-layout-flex">
@@ -43,8 +43,12 @@
           <input type="checkbox" id="ui-section-header--menu-id">
           <label for="ui-section-header--menu-id" class="ui-section-header--menu-icon"></label>
           <!-- MENU -->
-          <nav role="navigation" class="ui-section-header--nav ui-layout-flex">
-            <a href="index.html" role="link" aria-label="#" class="ui-section-header--current ui-component-navbutton"><strong>Home</a>
+          <nav role="navigation" class="ui-section-header--nav">
+            <div class="wrapper">
+              <nav class="navbar  bg-dark">
+                  <a class="navbar-brand-left" href="index.html"><strong>Home</strong></a>
+              </nav>
+            </div>
             <!-- Other pages are not ready
             <a2 aria-label="#" class="ui-section-header--current ui-component-navbutton"><strong>Home</strong></a2>
             <a href="projects.html" role="link" aria-label="#"  class="ui-section-header--current ui-component-navbutton">Projects</a>
@@ -57,8 +61,8 @@
       <div>
     </header>
     <main role="main">
-    <section>
-      <h1>The input required attribute</h1>
+    <section class="ui-section-testimonial">
+      <h2 class="ui-layout-grid">Please input Pokemon and their terra types</h2>
       <div class="ui-section-hero__layout ui-layout-grid ui-layout-grid">
         <form id="team">
           <label for="name">Name:</label>
@@ -389,9 +393,9 @@
           </select>  
           <div class="p10">
           </div>
-          <br>
-          <!-- button type="submit">Submit</button 
-          !-->
+          <div>
+            <input type="button" id="bt" value="Save data to file" onclick="saveFile()" />
+          </div>
         </form> 
 
         <!--     Script adapted from https://www.encodedna.com/javascript/how-to-save-form-data-in-a-text-file-using-javascript.htm      -->
@@ -472,9 +476,6 @@
             newLink.click(); 
 }
         </script>
-        <div>
-          <input type="button" id="bt" value="Save data to file" onclick="saveFile()" />
-        </div>
       </div>
     </section>
   </body>

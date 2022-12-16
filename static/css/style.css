@@ -139,6 +139,7 @@ html { box-sizing: border-box; }
 *:before,
 *:after { box-sizing: inherit; }
 
+.bodyc,
 body {
   background-color: var(--ui-color-background-primary);
   color: var(--ui-color-typography-body);
@@ -150,6 +151,12 @@ body {
   margin: 0 auto;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+}
+
+.bodyc {
+  background-image: url("../images/starters.png");
+
+  
 }
 
 /*--------------------------------------------------------------
@@ -439,6 +446,7 @@ div label[for=ui-component-toggle__yearly] {
 
 /* MENU */
 
+.ui-section-header--navs,
 .ui-section-header--nav {
   background-color: var(--ui-color-background-primary);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.05);
@@ -460,8 +468,6 @@ div label[for=ui-component-toggle__yearly] {
   top: 0;
   visibility: visible;
 }
-
-
 
 
 
