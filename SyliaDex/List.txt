@@ -1,0 +1,7 @@
+["Ballootleg" "Blizzel" "Bughty" "Cocomfy" "Craweak" "Crawn" "Damselvern" "Divaffin" "Duquarry" "Ekishok" 
+ "Essengel" "Ferrisage" "Fleggling" "Foundrizard" "Galecross" "Galvarmor" "Gawgawn" "Geckoal" "Graunting" 
+ "Grorant" "Groul" "Grounted" "Helmind" "Hermitress" "Hogoon" "Ichthyore" "Imperaven" "Inflan" "InflanGUN" 
+ "Jiwell" "Laghast" "Launchovy" "Lawillo" "Maron" "Minay" "Minejesty" "Ninslash" "Oxinch" "Pebbrow" "Phantik" 
+ "Phantime" "Psycanine" "Puppetric" "OrencinN" "OrencinS" "Roglet" "Rookaw" "Roostilisk" "Sameowrai" "Scorchen" 
+ "Scuddog" "Steelion" "Stritten" "Submarline" "Sweetipede" "Thermtile" "Threel" "Toxiray" "Tunerve" "Tunibble"
+ "Tunoble" "Unistone" "Veneel" "Wormequin" "Buncti" "Faenestrel" "Harepin" "Loxoss" "Mossodonta" "Capif" "Curcaper" "Caphloret"]
