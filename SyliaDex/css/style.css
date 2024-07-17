@@ -71,16 +71,29 @@ a {
 img {
     max-width: 100%;
     max-height: 100%;
-
 }
+
+
 
 .grid-container {
     display: grid;
     grid-template-columns:20% 20% 20% 20% 20%;
-    background-color: #2196F3;
+    background-color: #293a85;
     padding: 10px;
 }
 
+.grid-container2 {
+    display:grid;
+    grid-template-areas: 
+    'video1 video1 text1 text1'
+    'text2 text2 text2 text2'
+    'download download download download'
+    'pic1 pic2 pic3 pic4'
+    'text3 text3 text3 text3';
+    background-color: #293a85;
+    grid-template-rows: 600px auto auto auto auto;
+    padding: 10px;
+}
 
 .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
@@ -88,10 +101,24 @@ img {
     padding: 20px;
     font-size: 30px;
     text-align: center;
-  
-    
 }
 
+.video1 {grid-area: video1;}
+
+.text1 {grid-area: text1;}
+
+.text2 {grid-area: text2;}
+
+.text3 {grid-area: text3;}
+
+.pic1 {grid-area: pic1;}
+.pic2 {grid-area: pic2;}
+.pic3 {grid-area: pic3;}
+.pic4 {grid-area: pic4;}
+.pic5 {grid-area: pic5;}
+.pic6 {grid-area: pic6;}
+
+.download {grid-area: download;}
 
 .type {
     width:30%;
@@ -101,6 +128,10 @@ img {
 .trainer {
     width:30%;
     height:30%;
+}
+
+.pic {
+    image-rendering: auto;
 }
 
 .grass {
