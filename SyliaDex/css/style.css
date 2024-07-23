@@ -198,7 +198,16 @@ background-color:rgb(168, 219, 116)
   right: 0px;
 }
 
+.sides {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
 
+
+/* 
+Pokedex Image URL
+*/
 
 .buncti {
     background-image:url('https://raw.githubusercontent.com/Darkonius64/syliaimages/main/Buncti.png');    
@@ -209,7 +218,7 @@ background-color:rgb(168, 219, 116)
 }
 
 .faenestrel {
-    background-image:url('https://raw.githubusercontent.com/Darkonius64/syliaimages/main/Faenestrel.png');    
+    background-image:url('../image/fen.png');    
 }
 
 .geckoal {
@@ -223,3 +232,10 @@ background-color:rgb(168, 219, 116)
 .foundrizard {
     background-image:url('https://raw.githubusercontent.com/Darkonius64/syliaimages/main/Foundrizard.png');    
 }
+
+
+
+/* 
+Pokedex Sound URL
+*/
+

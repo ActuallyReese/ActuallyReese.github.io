@@ -6,11 +6,19 @@
 <title>Pokedex</title>
 <link rel="stylesheet" href="../css/style.css" />
 </head>
-<body>
+<body class="homebg">
     <a href="../dexpage.html" class="navbar">Fakedex</a>
     <div class="container">
         <div class="bg-image faenestrel"></div>
     </div>
+    <audio controls id="cry">
+        <source src="https://raw.githubusercontent.com/Darkonius64/syliaimages/main/Cries/FAENESTREL.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
+    </audio>
+    <script>
+        var audio = document.getElementById("cry");
+        audio.volume = 0.08;
+    </script>
 <script src="app.js"></script>
 </body>
 </html>
