@@ -4,6 +4,7 @@ body {
     text-align: center;
     font-size: 100px;
     margin: 0px;
+    font-family: sans-serif;
 }
 
 p {
@@ -13,7 +14,7 @@ p {
 }
 
 .homebg {
-    background-image: url("../image/sun.png");
+    background-image: url("../image/sun2.png");
     background-color: #293a85;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -50,6 +51,58 @@ p {
     font-size: 90px;
     text-align: center;
     
+}
+
+.navbar-left {
+    padding-inline: 1%;
+    font-size:x-large;
+    text-align:center;
+    margin: 0px;
+    -webkit-text-fill-color: whitesmoke;
+}
+
+.navbarblock-home {
+    background-color: black;
+    text-align: left;
+    background-size: auto;
+    padding-top: 5px;
+    display: flex;
+    position: sticky;
+}
+
+.navbarblock-home a:hover {
+    background-color:rgba(14, 14, 14, 0.8);
+    color: black;
+}
+
+.input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+.sticky {
+    position: sticky;
+    top:0px;
+}
+
+.selected {
+    background-image: url(../image/highlight.png);
+    background-size: 100% 100%;
+
+}
+
+.search {
+    background-image: url(../image/search_banner.png);
+    background-size: 100%;
+
+    background-repeat: no-repeat;
+    text-align: right;
+    border: none;
+    padding-right: 15%;
 }
 
 .fitscreen {
@@ -95,10 +148,31 @@ img {
     padding: 10px;
 }
 
+.grid-container3 {
+    display: grid;
+    grid-template-areas: 
+    'pic1 pic2 pic3'
+    'pic1 pic4 pic3';
+    padding: 10px;
+}
+
 .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item2 {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item3 {
+    padding: 20px;
+    padding-top: 30%;
     font-size: 30px;
     text-align: center;
 }
