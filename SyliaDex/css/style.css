@@ -98,12 +98,12 @@ p {
 .search {
     background-image: url(../image/search_banner.png);
     background-size: 100%;
-
     background-repeat: no-repeat;
     text-align: right;
     border: none;
     padding-right: 15%;
 }
+
 
 .fitscreen {
     margin: auto;
@@ -121,6 +121,12 @@ a {
     padding-bottom: 0%;
 }
 
+b {
+    text-decoration:none;
+    color: black;
+
+}
+
 img {
     max-width: 100%;
     max-height: 100%;
@@ -130,7 +136,7 @@ img {
 
 .grid-container {
     display: grid;
-    grid-template-columns:20% 20% 20% 20% 20%;
+    grid-template-columns:21% 5% 21% 5% 21% 5% 21%;
     background-color: #293a85;
     padding: 10px;
 }
@@ -158,7 +164,7 @@ img {
 
 .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
     padding: 20px;
     font-size: 30px;
     text-align: center;
@@ -173,6 +179,15 @@ img {
 .grid-item3 {
     padding: 20px;
     padding-top: 30%;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item4 {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    padding: 20px;
+    padding-top: 0px;
     font-size: 30px;
     text-align: center;
 }
@@ -209,37 +224,129 @@ img {
 }
 
 .grass {
-background-color:rgb(168, 219, 116)
+    background-color:#8cc63f;
+    color:white;
+    border-radius: 15px;
+    text-align: left;
+    width: fit-content;
+    height: fit-content;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 2%;
 }
 
 .fire {
-    background-color:rgb(248, 129, 129)
+    background-color:rgb(248, 129, 129);
+    color:white;
+    border-radius: 15px;
+    text-align: left;
+    width: fit-content;
+    height: fit-content;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 2%;
 }
 
 .water {
-    background-color:rgb(147, 172, 241)
+    background-color:rgb(147, 172, 241);
+    color:white;
+    border-radius: 15px;
+    text-align: left;
+    width: fit-content;
+    height: fit-content;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 2%;
 }
 
 .normal {
-    background-color:rgba(255, 230, 175, 0.893)
+    background-color:rgba(255, 230, 175, 0.893);
+    color:white;
+    border-radius: 15px;
+    text-align: left;
+    width: fit-content;
+    height: fit-content;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 2%;
 } 
 
 .dark {
-    background-color:rgba(91, 90, 91, 0.893)
+    background-color:rgba(91, 90, 91, 0.893);
+    color:white;
+    border-radius: 15px;
+    text-align: left;
+    width: fit-content;
+    height: fit-content;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 2%;
 } 
 
 .flying {
-    background-color:rgb(179, 251, 199)
+    background-color:rgb(179, 251, 199);
+    color:white;
+    border-radius: 15px;
+    text-align: left;
+    width: fit-content;
+    height: fit-content;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 2%;
 }
 
 .ground {
-    background-color:rgb(215, 170, 107)
+    background-color:rgb(215, 170, 107);
+    color:white;
+    border-radius: 15px;
+    text-align: left;
+    width: fit-content;
+    height: fit-content;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 2%;
+}
+
+.fairy {
+    background-color:#fc77ea;
+    color:white;
+    border-radius: 15px;
+    text-align: left;
+    width: fit-content;
+    height: fit-content;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 2%;
+}
+
+.bug {
+    background-color:#c6ed3b;
+    color:white;
+    border-radius: 15px;
+    text-align: left;
+    width: fit-content;
+    height: fit-content;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 2%;
+}
+
+
+
+.white {
+    background-color: white;
 }
 
 .name {
-    text-align: center;
-    font-size: 70px;
-    
+    text-align: left;
+    font-size: 30px; 
+    font-family: sans-serif;
+
+}
+
+.name2 {
+    text-align:left;
+    font-size: 18px; 
 }
 
 
@@ -276,6 +383,21 @@ background-color:rgb(168, 219, 116)
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 5%;
+    background-color: white;
+}
+
+.poke {
+    background-color: #cccccc;
+    border-radius: 25px;
+    border: 1px solid black;
+}
+
+.poketype {
+    border-radius: 14px;
+    text-align: center;
+    color:white;
+    font-size: 80%;
+
 }
 
 
